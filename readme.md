@@ -1,4 +1,8 @@
-## This repository provides a simple Vagrantfile to use with Vagrant, providing setup environment with Terraform, Go and custom plugin for Terraform.
+## This repository provides a testing setup for Terraform, using custom plugin and Golang. 
+
+## Pre-requisites :
+
+- Vagrant
 
 ## How to install Vagrant :
 
@@ -15,7 +19,7 @@ git clone https://github.com/martinhristov90/terraformCustomPlugin.git`
 cd terraformCustomPlugin
 ```
 - Execute `vagrant up`
-- It might take some time to download the boxes since you do not have them added to Vagrant.
+- It might take some time to download the boxes for the first time.
 - Check with `vagrant status` that you have both Vagrant boxes running. The output should look like this:
 ```shell
 Current machine states:
@@ -31,7 +35,7 @@ simply run `vagrant up`.
 ```
 vagrant ssh
 ```
-- Now you can see that in `/home/vagrant/` there is a file named `main.tf` in which is specified the custom plugin `extip` and using data source provided by it.
+- Now you can see that in `/vagrant` there is a file named `main.tf` in which is specified the custom plugin `extip` and using data source provided by it.
 - You can execute `terraform init`, so the plugin can be initialized. 
 - Next, `terraform plan` to view what are the actions that are going to be performed by Terraform. The output should look like this :
 ```
