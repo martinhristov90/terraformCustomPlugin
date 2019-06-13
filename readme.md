@@ -54,4 +54,4 @@ Outputs:
 
 external_ip = YOUR_IP_IS_GOING_TO_BE_HERE
 ```
-- To stop the running machines execute `vagrant halt`, to destroy the setup use `vagrant destroy`.
+- To stop the running machine execute `vagrant halt`, to destroy the setup use `vagrant destroy`.
